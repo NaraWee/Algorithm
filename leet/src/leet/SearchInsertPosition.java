@@ -1,19 +1,20 @@
-package leet;
+package leetCode;
 
 public class SearchInsertPosition {
 
 	public static void main(String[] args) {
-		
-		// https://leetcode.com/problems/search-insert-position/
 
+		// https://leetcode.com/problems/search-insert-position/
+		
 		int[] nums = {1,3,5,6};
 		int target = 5;
 		
-		SearchInsertPosition search = new SearchInsertPosition();
-		System.out.println(search.searchInsert(nums, target));
+		SearchInsertPosition insert = new SearchInsertPosition();
+		
+		System.out.println(insert.searchInsert(nums, target));
 
 	}
-	
+
 	public int searchInsert(int[] nums, int target) {
 		 
 		int output = 0;;
@@ -33,5 +34,5 @@ public class SearchInsertPosition {
 		
 		return output;
     }
-
+	
 }
