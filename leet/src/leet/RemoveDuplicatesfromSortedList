@@ -13,14 +13,14 @@ class Solution {
         
         ListNode temp = head;
         
-        if(temp == null) {
+        if(temp == null) {  // 값이 없을 떄
             
             return head;
         }
         
         while(temp.next != null) {
             
-            if(temp.val == temp.next.val) {
+            if(temp.val == temp.next.val) {     // 값이 중복될 때
                 
                 temp.next = temp.next.next;
                 
