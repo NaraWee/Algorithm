@@ -7,11 +7,11 @@ class Solution {
         
         for(int i = 1; i < releaseTimes.length; i++) {
             
-            if(releaseTimes[i] - releaseTimes[i-1] >= max) {
+            if(releaseTimes[i] - releaseTimes[i-1] >= max) {    // max값 찾기
                 
-                if(releaseTimes[i] - releaseTimes[i-1] == max) {
+                if(releaseTimes[i] - releaseTimes[i-1] == max) {    // max값과 같을 떼
                     
-                    output = (keys[i] > output) ? keys[i] : output;
+                    output = (keys[i] > output) ? keys[i] : output; // 더 큰 알파벳 반환
                     
                 } else {
                     output = keys[i];
